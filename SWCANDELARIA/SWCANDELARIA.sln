@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWCANDELARIA", "SWCANDELARIA\SWCANDELARIA.csproj", "{235A539D-41E2-4420-8FAA-661E67AA036F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWCAT", "SWCAT\SWCAT.csproj", "{6ECFD68E-B437-429B-8B4C-8CEDF1ECD61D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{235A539D-41E2-4420-8FAA-661E67AA036F} = {235A539D-41E2-4420-8FAA-661E67AA036F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{235A539D-41E2-4420-8FAA-661E67AA036F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{235A539D-41E2-4420-8FAA-661E67AA036F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{235A539D-41E2-4420-8FAA-661E67AA036F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECFD68E-B437-429B-8B4C-8CEDF1ECD61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECFD68E-B437-429B-8B4C-8CEDF1ECD61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECFD68E-B437-429B-8B4C-8CEDF1ECD61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECFD68E-B437-429B-8B4C-8CEDF1ECD61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
