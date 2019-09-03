@@ -6,13 +6,21 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        #form1
+        {
+            height: 373px;
+        }
+    </style>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <div>
             Consumo de web service
         </div>
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Height="258px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="596px">
+        <br />
+        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Height="306px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1" Width="714px">
             <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
             <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
             <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
@@ -23,8 +31,7 @@
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
-        <br />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
     </form>

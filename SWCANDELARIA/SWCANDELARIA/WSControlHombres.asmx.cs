@@ -25,39 +25,38 @@ namespace SWCANDELARIA
         [WebMethod]
         public DataSet Getdata()
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "@Data Source= 127.0.0.1\\SQL ;Initial Catalog = CANDE;Integrated Security=False;User Id=sa;Password=Dpdlanman2010";
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM ADM_MAESTRO_HOMBRES_2010 " ,conn);
+            SqlConnection conn = new SqlConnection
+            {
+                ConnectionString = @"Data Source= 172.1.1.230\sqlexpress ;Initial Catalog = CODACA ;Integrated Security=False;User id=SA ;Password=sa"
+            };
+            SqlDataAdapter da = new SqlDataAdapter("select * from openquery(integra,'select * from INTGEN.FGEN029')", conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
             return ds;
         }
 
-       /* [WebMethod]
+
+        [WebMethod]
         public double Square(double a, double b)
         {
             return Math.Pow(a, b);
         }
-        
 
-
-
-
-        /*[WebMethod]
+        [WebMethod]
         public string Hola(string Nombre)
         {
             return "Hola" + Nombre;
         }
-        /*public string FyH()
+        public string FyH()
         {
             return DateTime.Now.ToString();
-        }*/
+        }
 
-       /* [WebMethod]
+        [WebMethod]
         public string HelloWorld()
         {
             return "Control de candelaria Hombres  ";
-            
+
         }
         [WebMethod]
         public bool consultahombre()
@@ -69,7 +68,8 @@ namespace SWCANDELARIA
             catch
             {
                 return false;
-            }*/
-        //}
+            }
+            //}
+        }
     }
-}
+
